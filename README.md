@@ -1,6 +1,6 @@
 run:
 ```
-AZURE_STORAGE_ACCOUNT=account AZURE_STORAGE_ACCESS_KEY=key python -m azure_sync ./local/path sharename[/remote/path]
+AZURE_STORAGE_ACCOUNT=account AZURE_STORAGE_ACCESS_KEY=key python -m src.azure_sync ./local/path sharename[/remote/path]
 ```
 
 run docker container:
