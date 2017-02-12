@@ -15,8 +15,12 @@ if __name__ == '__main__':
         fileshare = remote
         base_dst = ''
 
-    with open(config_file) as json_data:
-        config = json.load(json_data)
+    try:
+        with open(config_file) as json_data:
+            config = json.load(json_data)
+    except:
+        print("Error while opening the file {}".format(config_file))
+        sys.exit(0)
 
     project_dir = os.path.dirname(os.path.realpath(config_file))
 
